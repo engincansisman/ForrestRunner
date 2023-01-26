@@ -26,7 +26,7 @@ namespace Player
         {
             
             transform.Translate(Vector3.forward * (Time.deltaTime * moveSpeed), Space.World);
-            if (canMove == true)
+            if (canMove)
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
                 {
